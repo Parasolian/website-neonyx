@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neonyx Designs | Luxury Contemporary Interior Design</title>
+    <meta name="description" content="Neonyx Designs specializes in high-end, contemporary interior decoration. We blend natural onyx textures with luxury ambient lighting to design spaces that inspire.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css?v=1.0.2">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/neonyx_logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="assets/neonyx_logo.png" alt="Neonyx Designs Logo" class="logo-img" width="36" height="36" style="height: 36px; width: auto;">
+                NEONYX <span class="logo-accent">DESIGNS</span>
+            </a>
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#philosophy" class="nav-link">Philosophy</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#quiz" class="nav-link">Style Quiz</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-btn">Consultation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-content">
+                <img src="assets/neonyx_logo.png" alt="Neonyx Designs Logo" class="hero-logo-img fade-in" width="140" height="140" style="width: 140px; height: auto;">
+                <span class="hero-tagline fade-in">Contemporary Luxury Interiors</span>
+                <h1 class="hero-title fade-in">Elegance in Darkness.<br>Shaped by <span class="glow-text">Light.</span></h1>
+                <p class="hero-description fade-in">We harmonize the bold depth of rich onyx stone with the subtle, warm glow of state-of-the-art ambient lighting, crafting interiors that feel deeply luxurious and uniquely yours.</p>
+                <div class="hero-actions fade-in">
+                    <a href="#portfolio" class="btn btn-primary">Explore Portfolio</a>
+                    <a href="#quiz" class="btn btn-secondary">Find Your Style</a>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <span class="scroll-mouse"><span class="wheel"></span></span>
+                <span class="scroll-text">Scroll to explore</span>
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section id="philosophy" class="philosophy">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Our Vision</span>
+                    <h2 class="section-title">The Neonyx Philosophy</h2>
+                    <p class="section-subtitle">A synthesis of raw organic geological texture and modern lighting physics.</p>
+                </div>
+                
+                <div class="philosophy-grid">
+                    <div class="philosophy-card border-glow-purple">
+                        <div class="philosophy-icon">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <h3>Onyx: The Base</h3>
+                        <p>We believe great interior design begins with raw, high-contrast structural elegance. Using dark marble, textured slate, rich walnuts, and obsidian stones, we lay down a sophisticated backdrop that feels grounded and premium.</p>
+                    </div>
+                    
+                    <div class="philosophy-card border-glow-amber">
+                        <div class="philosophy-icon">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <h3>Neon: The Glow</h3>
+                        <p>Light is the paint of the modern era. We use sophisticated cove lighting, architectural LEDs, glowing brass fixtures, and soft ambient illumination to highlight textures, extend space, and create dynamic atmospheres at night.</p>
+                    </div>
+
+                    <div class="philosophy-card border-glow-cyan">
+                        <div class="philosophy-icon">
+                            <i class="fa-solid fa-sliders"></i>
+                        </div>
+                        <h3>Harmony: The Living</h3>
+                        <p>We tailor every detail to the occupant. A room should not just look like a photograph; it must behave like a sanctuary. By balancing shadow and radiance, we deliver comfortable, functional, and awe-inspiring living spaces.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Showcase -->
+        <section id="portfolio" class="portfolio">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Selected Works</span>
+                    <h2 class="section-title">Design Showcase</h2>
+                    <p class="section-subtitle">Explore a selection of our bespoke residential and commercial renovations.</p>
+                </div>
+
+                <!-- Portfolio Filters -->
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="residential">Residential Spaces</button>
+                    <button class="filter-btn" data-filter="renovations">Renovations & Baths</button>
+                </div>
+
+                <!-- Portfolio Grid -->
+                <div class="portfolio-grid">
+                    <!-- Project 1 (Belmar Beach - Residential) -->
+                    <div class="project-card" data-category="residential">
+                        <div class="project-img-wrapper">
+                            <img src="assets/belmar_beach.png" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80';" alt="Belmar Beach Design" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <span class="project-tag">Residential</span>
+                                    <h4 class="project-title">Belmar Beach</h4>
+                                    <p class="project-desc">A bright, coastal contemporary living room featuring light oak wood, cream linens, and soft ocean vibes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 (Powder Baths - Renovations) -->
+                    <div class="project-card" data-category="renovations">
+                        <div class="project-img-wrapper">
+                            <img src="assets/powder_baths.png" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1617806118233-18e1db207f62?auto=format&fit=crop&w=1200&q=80';" alt="Powder Baths Design" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <span class="project-tag">Renovation</span>
+                                    <h4 class="project-title">Powder Baths</h4>
+                                    <p class="project-desc">Dramatic dark botanical wallpaper paired with a floating black marble vanity and circular backlighting.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 (The Great Room - Residential) -->
+                    <div class="project-card" data-category="residential">
+                        <div class="project-img-wrapper">
+                            <img src="assets/the_great_room.png" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1200&q=80';" alt="The Great Room Design" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <span class="project-tag">Residential</span>
+                                    <h4 class="project-title">The Great Room</h4>
+                                    <p class="project-desc">Double-height space highlighting a white limestone fireplace, warm oak bookshelf styling, and plush upholstery.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 (Dallas Modern - Residential) -->
+                    <div class="project-card" data-category="residential">
+                        <div class="project-img-wrapper">
+                            <img src="assets/dallas_modern.png" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80';" alt="Dallas Modern Design" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <span class="project-tag">Residential</span>
+                                    <h4 class="project-title">Dallas Modern</h4>
+                                    <p class="project-desc">Sleek contemporary accents, charcoal textured stone walls, custom cove ceiling glows, and concrete floors.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Style Archetype Quiz -->
+        <section id="quiz" class="quiz">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Interactive Experience</span>
+                    <h2 class="section-title">Discover Your Style Archetype</h2>
+                    <p class="section-subtitle">Take our 1-minute visual questionnaire to identify your perfect interior mood.</p>
+                </div>
+
+                <div class="quiz-box border-glow-amber">
+                    <!-- Progress Bar -->
+                    <div class="quiz-progress-container">
+                        <div class="quiz-progress-bar" id="quiz-progress"></div>
+                    </div>
+
+                    <!-- Quiz Intro State -->
+                    <div class="quiz-step active" id="step-intro">
+                        <div class="quiz-intro-content">
+                            <img src="assets/neonyx_logo.png" alt="Neonyx Designs Logo" class="quiz-logo-img" width="80" height="80" style="width: 80px; height: auto;">
+                            <h3>What is your Neonyx Design Persona?</h3>
+                            <p>Every home tells a story. Select the textures, colors, and lighting aesthetics that pull you in, and we will reveal your curated design profile.</p>
+                            <button class="btn btn-primary" onclick="startQuiz()">Begin the Quiz</button>
+                        </div>
+                    </div>
+
+                    <!-- Question 1 -->
+                    <div class="quiz-step" id="step-1">
+                        <span class="quiz-question-number">Question 1 of 3</span>
+                        <h3 class="quiz-question">Which materials feel most at home to you?</h3>
+                        <div class="quiz-options-grid">
+                            <div class="quiz-option" onclick="selectOption(1, 'A')">
+                                <div class="option-image-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80" alt="Marble & Gold">
+                                </div>
+                                <div class="option-details">
+                                    <strong>Luxury Textures</strong>
+                                    <span>Veneered marble, polished brass, gold accents</span>
+                                </div>
+                            </div>
+                            <div class="quiz-option" onclick="selectOption(1, 'B')">
+                                <div class="option-image-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=600&q=80" alt="Wood & Plaster">
+                                </div>
+                                <div class="option-details">
+                                    <strong>Organic Elements</strong>
+                                    <span>Warm oak slats, raw lime wash plaster, linen</span>
+                                </div>
+                            </div>
+                            <div class="quiz-option" onclick="selectOption(1, 'C')">
+                                <div class="option-image-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Concrete & Steel">
+                                </div>
+                                <div class="option-details">
+                                    <strong>Industrial Textures</strong>
+                                    <span>Polished concrete floors, raw steel, slate rock</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="quiz-step" id="step-2">
+                        <span class="quiz-question-number">Question 2 of 3</span>
+                        <h3 class="quiz-question">Choose the lighting atmosphere you prefer:</h3>
+                        <div class="quiz-options-grid">
+                            <div class="quiz-option" onclick="selectOption(2, 'A')">
+                                <div class="option-image-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=600&q=80" alt="Indirect Cove Lighting">
+                                </div>
+                                <div class="option-details">
+                                    <strong>Atmospheric Cove Glow</strong>
+                                    <span>Hidden LED strips under floating frames, warm uplights</span>
+                                </div>
+                            </div>
+                            <div class="quiz-option" onclick="selectOption(2, 'B')">
+                                <div class="option-image-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=600&q=80" alt="Artistic Chandeliers">
+                                </div>
+                                <div class="option-details">
+                                    <strong>Sculptural Statements</strong>
+                                    <span>Unique hanging light fixtures, bold designer lamps</span>
+                                </div>
+                            </div>
+                            <div class="quiz-option" onclick="selectOption(2, 'C')">
+                                <div class="option-image-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1565538810844-1e119fa18020?auto=format&fit=crop&w=600&q=80" alt="Recessed Minimalist">
+                                </div>
+                                <div class="option-details">
+                                    <strong>Minimal Architectural</strong>
+                                    <span>Flush recessed spotlights, clean ceiling tracks</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="quiz-step" id="step-3">
+                        <span class="quiz-question-number">Question 3 of 3</span>
+                        <h3 class="quiz-question">Which accent color speaks to your soul?</h3>
+                        <div class="quiz-options-grid">
+                            <div class="quiz-option" onclick="selectOption(3, 'A')">
+                                <div class="option-color-block color-brass"></div>
+                                <div class="option-details">
+                                    <strong>Brass & Amber Gold</strong>
+                                    <span>Opulence, warmth, metallic sparks</span>
+                                </div>
+                            </div>
+                            <div class="quiz-option" onclick="selectOption(3, 'B')">
+                                <div class="option-color-block color-sage"></div>
+                                <div class="option-details">
+                                    <strong>Earthy Sage & Ochre</strong>
+                                    <span>Organic warmth, soft botanical, soothing</span>
+                                </div>
+                            </div>
+                            <div class="quiz-option" onclick="selectOption(3, 'C')">
+                                <div class="option-color-block color-monochrome"></div>
+                                <div class="option-details">
+                                    <strong>Slate Charcoal & White</strong>
+                                    <span>High contrast, ultimate minimalist, clean lines</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quiz Result State -->
+                    <div class="quiz-step" id="step-result">
+                        <div class="quiz-result-content">
+                            <span class="result-badge">Your Archetype</span>
+                            <h3 id="result-title">Onyx Modernist</h3>
+                            <div class="result-layout">
+                                <div class="result-image-holder">
+                                    <img id="result-img" src="" alt="Result Image">
+                                </div>
+                                <div class="result-text-holder">
+                                    <p id="result-desc">You gravitate towards a stunning high-end look featuring rich charcoal hues, custom backlighting, and polished metals like gold and brass. Your spaces feel like luxury hotel lounges, balancing bold contrasts with warm atmosphere.</p>
+                                    <div class="result-checklist">
+                                        <h4>Key Features of your design:</h4>
+                                        <ul id="result-features">
+                                            <li><i class="fa-solid fa-circle-check"></i> Rich textured slate & dark marble surfaces</li>
+                                            <li><i class="fa-solid fa-circle-check"></i> Soft gold indirect LED strip integration</li>
+                                            <li><i class="fa-solid fa-circle-check"></i> Warm metallic accents (Brass, Bronze)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="result-actions">
+                                        <button class="btn btn-secondary" onclick="resetQuiz()">Retake Quiz</button>
+                                        <a href="#contact" class="btn btn-primary" onclick="setContactSubject()">Discuss Your Profile</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">How We Work</span>
+                    <h2 class="section-title">Our Design Services</h2>
+                    <p class="section-subtitle">From conceptual sketches to full turn-key handovers, we construct beautiful living environments.</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-pencil"></i></div>
+                        <h3>1. Design & Space Planning</h3>
+                        <p>We craft spatial layouts that optimize space, light, and movement. Including 3D rendering walkthroughs, color scheme creation, and materials sourcing.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                        <h3>2. Custom Lighting Schemes</h3>
+                        <p>Light changes everything. We curate custom lighting schemes involving indirect LED installation, architectural spotlight design, and fine sculptural light selections.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-chair"></i></div>
+                        <h3>3. Furniture & Decor Styling</h3>
+                        <p>We source bespoke furniture, custom cabinetry, luxury carpets, window treatments, and artwork to style your home with Neonyx's tailored fingerprint.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-helmet-safety"></i></div>
+                        <h3>4. Project Supervision</h3>
+                        <p>We supervise contractors, lighting engineers, and decorators to execute the design blueprints exactly as drawn, delivering stress-free handovers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking & Contact Section -->
+        <section id="contact" class="contact">
+            <div class="section-container">
+                <div class="contact-layout">
+                    <div class="contact-info-panel">
+                        <span class="section-tag">Get in Touch</span>
+                        <h2 class="section-title">Let's Design Your Dream Space</h2>
+                        <p class="contact-description">Ready to elevate your home? Send us a message to request a detailed initial portfolio consultation, style brainstorming, or budget estimation.</p>
+                        
+                        <div class="contact-details">
+                            <div class="detail-item">
+                                <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <h4>Email Address</h4>
+                                    <p>ravi@neonyx.com</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <h4>Phone Number</h4>
+                                    <p>+1 (646) 714-3223</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                            <a href="#" aria-label="Houzz"><i class="fa-brands fa-houzz"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                        <div class="business-card-mockup">
+                            <a href="assets/neonyx_business_card.png" target="_blank" title="View Full Business Card">
+                                <img src="assets/neonyx_business_card.png" alt="Neonyx Designs Business Card" class="card-img" width="260" style="max-width: 260px; width: 100%; height: auto;">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-panel border-glow-purple">
+                        <form id="consultation-form" onsubmit="handleFormSubmit(event)">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="client-name">Your Name</label>
+                                    <input type="text" id="client-name" name="name" required placeholder="John Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-email">Email Address</label>
+                                    <input type="email" id="client-email" name="email" required placeholder="john@example.com">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="project-type">Project Scope</label>
+                                <select id="project-type" name="project_type">
+                                    <option value="residential-full">Residential (Full Home Remodel)</option>
+                                    <option value="residential-room">Residential (Single Room Styling)</option>
+                                    <option value="commercial">Commercial Space / Office</option>
+                                    <option value="lighting-only">Custom Lighting Design Only</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="project-message">Tell us about your space</label>
+                                <textarea id="project-message" name="message" rows="5" required placeholder="Describe your room sizes, preferred lighting vibes, or any specific ideas you have..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">Send Consultation Request</button>
+                            <div class="form-status" id="form-status-message"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-branding">
+                <a href="#home" class="footer-logo">
+                    <img src="assets/neonyx_logo.png" alt="Neonyx Designs Logo" class="logo-img" width="36" height="36" style="height: 36px; width: auto;">
+                    NEONYX <span class="logo-accent">DESIGNS</span>
+                </a>
+                <p>Creating luxury contemporary environments through spatial harmony and sophisticated lighting artistry.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#philosophy">Philosophy</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#quiz">Style Quiz</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#services">Interior Design</a></li>
+                    <li><a href="#services">Lighting Schematics</a></li>
+                    <li><a href="#services">Furniture Sourcing</a></li>
+                    <li><a href="#contact">Consultations</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Neonyx Designs. All rights reserved. Premium Interior Decoration.</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="app.js?v=1.0.2"></script>
+</body>
+</html>
