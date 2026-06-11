@@ -1,0 +1,27 @@
+name: Deploy Website to IONOS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  web-deploy:
+    name: Sync Files to IONOS
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get latest code
+      uses: actions/checkout@v4
+    
+    - name: Install lftp
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y lftp
+
+    - name: Sync files via LFTP
+      env:
+        FTP_USER: ${{ secrets.NEONYXFTPUSERNAME }}
+        FTP_PASS: ${{ secrets.NEONYXFTPPASSWORD }}
+        FTP_SERVER: ${{ secrets.NEONYXFTPSERVER }}
+      run: |
+        lftp -u "$FTP_USER","$FTP_PASS" -e "set sftp:auto-confirm yes; set ssl:verify-certificate no; set ssl:check-hostname no; mirror --reverse --delete --exclude-glob=.git*/ --exclude-glob=.github/ --exclude-glob=package.json --exclude-glob=package-lock.json --exclude-glob=node_modules/ . .; quit" sftp://$FTP_SERVER:22
